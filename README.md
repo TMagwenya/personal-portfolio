@@ -1,32 +1,32 @@
 # Tanatswa Magwenya — Personal Portfolio
 
-A personal portfolio website for **Tanatswa Magwenya**, a third-year BSc Computer Science
-student at **DMI St John the Baptist University, Mangochi, Malawi**.
+A personal portfolio website for Tanatswa Magwenya, a third-year BSc Computer Science
+student at DMI St John the Baptist University, Mangochi, Malawi.
 
 The website presents my academic background, technical skills, projects and contact
 details through a dark, modern interface built with HTML5, CSS3 and vanilla JavaScript.
 
----
 
-## Live website
 
-- **GitHub repository:** [github.com/TMagwenya/personal-portfolio](https://github.com/TMagwenya/personal-portfolio)
-- **Published site:** [tmagwenya.github.io/personal-portfolio](https://tmagwenya.github.io/personal-portfolio/)
+ Live website
 
----
+GitHub repository: [github.com/TMagwenya/personal-portfolio](https://github.com/TMagwenya/personal-portfolio)
+Published site: [tmagwenya.github.io/personal-portfolio](https://tmagwenya.github.io/personal-portfolio/)
 
-## Purpose
+
+
+ Purpose
 
 The portfolio acts as a digital professional identity. It allows potential employers,
 internship providers and collaborators to:
 
-- learn who I am and what I study;
-- review my technical skills and educational background;
-- explore real projects with links to their source code;
-- see the animation and interaction techniques I can implement;
+- learn who I am and what I study
+- review my technical skills and educational background
+- explore real projects with links to their source code
+- see the animation and interaction techniques I can implement
 - contact me directly by email or GitHub.
 
----
+
 
 ## Pages
 
@@ -39,20 +39,20 @@ internship providers and collaborators to:
 
 All four pages share the same navigation menu, footer and external stylesheet.
 
----
+
 
 ## Technologies used
 
-- **HTML5** — semantic structure (`header`, `nav`, `main`, `section`, `article`, `footer`), headings, paragraphs, lists, tables, images, links and text formatting.
-- **CSS3** — custom properties, Flexbox, CSS Grid, gradients, borders, shadows, transitions, keyframe animations, hover effects and responsive media queries.
-- **JavaScript (vanilla)** — mobile navigation, typing effect, IntersectionObserver scroll reveals, animated skill bars, project filtering, back-to-top button and dynamic footer year.
-- **Google Fonts** — Outfit, Inter and JetBrains Mono.
-- **SVG** — original background and project illustrations.
-- **GitHub Pages** — hosting (see deployment steps below).
+- HTML5 — semantic structure (`header`, `nav`, `main`, `section`, `article`, `footer`), headings, paragraphs, lists, tables, images, links and text formatting.
+- CSS3 — custom properties, Flexbox, CSS Grid, gradients, borders, shadows, transitions, keyframe animations, hover effects and responsive media queries.
+- JavaScript (vanilla) — mobile navigation, typing effect, IntersectionObserver scroll reveals, animated skill bars, project filtering, back-to-top button and dynamic footer year.
+- Google Fonts — Outfit, Inter and JetBrains Mono.
+- SVG — original background and project illustrations.
+- GitHub Pages — hosting (see deployment steps below).
 
 No frameworks, libraries or downloaded templates are used.
 
----
+
 
 ## Key features
 
@@ -86,11 +86,11 @@ No frameworks, libraries or downloaded templates are used.
 
 Animations respect `prefers-reduced-motion` and do not block reading or navigation.
 
----
+
 
 ## Folder structure
 
-```
+
 personal-portfolio/
 ├── index.html
 ├── about.html
@@ -108,44 +108,44 @@ personal-portfolio/
 │   ├── project-tourism.svg
 │   └── project-wxpython.svg
 └── README.md
-```
+
 
 File names are lowercase, meaningful and free of spaces.
 
----
+
 
 ## Run the website locally
 
 No installation or build step is required.
 
 1. Open the project folder in Visual Studio Code.
-2. Open `index.html` in a browser, **or** use the Live Server extension.
+2. Open `index.html` in a browser, or use the Live Server extension.
 3. Alternatively, start a local server from the project folder:
 
-   ```bash
+   bash
    python -m http.server 8000
-   ```
+   
 
    Then visit `http://localhost:8000`.
 
 A local server is recommended so that relative paths behave exactly as they will on
 GitHub Pages.
 
----
+
 
 ## Publish to GitHub Pages
 
 1. Create a new public repository named `personal-portfolio` on GitHub.
 2. Upload the contents of this folder (not the folder itself) to the repository root.
 3. Make sure `index.html` is at the root of the repository.
-4. Open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Open Settings → Pages.
+5. Under Build and deployment, choose Deploy from a branch.
 6. Select the `main` branch and the `/ (root)` folder, then save.
 7. Wait for the site to publish and open the generated URL:
    `https://tmagwenya.github.io/personal-portfolio/`
 8. Test every navigation link, project link, image and animation on the published site.
 
----
+
 
 ## Before submitting — checklist
 
@@ -158,7 +158,7 @@ GitHub Pages.
 - [ ] Take screenshots of Home, About, Projects and Animated Concepts for submission.
 - [ ] Test the site on a phone and a desktop browser.
 
----
+
 
 ## Accessibility and quality notes
 
@@ -170,11 +170,11 @@ GitHub Pages.
 - Colour contrast and font sizes are chosen for readability.
 - The layout is responsive at desktop, tablet and mobile widths.
 
----
+
 
 ## Author
 
-**Tanatswa Magwenya**
+Tanatswa Magwenya
 BSc Computer Science, Year 3
 DMI St John the Baptist University, Mangochi, Malawi
 
