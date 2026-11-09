@@ -10,8 +10,8 @@ details through a dark, modern interface built with HTML5, CSS3 and vanilla Java
 
 ## Live website
 
-- **GitHub repository:** `https://github.com/TMagwenya/personal-portfolio` *(update after publishing)*
-- **Published site:** `https://tmagwenya.github.io/personal-portfolio/` *(update after enabling GitHub Pages)*
+- **GitHub repository:** [github.com/TMagwenya/personal-portfolio](https://github.com/TMagwenya/personal-portfolio)
+- **Published site:** [tmagwenya.github.io/personal-portfolio](https://tmagwenya.github.io/personal-portfolio/)
 
 ---
 
@@ -154,7 +154,7 @@ GitHub Pages.
 - [x] Education table includes Glen View 2 Secondary School, Zimbabwe.
 - [ ] Review the skills percentages on `animations.html` and adjust them to your own confidence.
 - [ ] Confirm the interests/hobbies on `about.html` reflect you accurately.
-- [ ] Add the final GitHub Pages URL and repository URL to this README.
+- [x] README includes the final GitHub Pages URL and repository URL.
 - [ ] Take screenshots of Home, About, Projects and Animated Concepts for submission.
 - [ ] Test the site on a phone and a desktop browser.
 
