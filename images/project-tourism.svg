@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="Illustration of a tourism recommendation dashboard with a map and destination cards">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08131f"/>
+      <stop offset="0.55" stop-color="#0b1a2b"/>
+      <stop offset="1" stop-color="#0d1226"/>
+    </linearGradient>
+    <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e879f9" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#7dd3fc" stroke-opacity="0.07"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+
+  <rect width="800" height="520" fill="url(#bg)"/>
+  <rect width="800" height="520" fill="url(#grid)"/>
+  <circle cx="660" cy="120" r="200" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="120" cy="430" r="170" fill="#22d3ee" fill-opacity="0.12" filter="url(#blur)"/>
+
+  <!-- map panel -->
+  <rect x="72" y="86" width="382" height="348" rx="20" fill="#0c1a2b" stroke="#284566" stroke-opacity="0.9"/>
+  <rect x="72" y="86" width="382" height="44" rx="20" fill="#12253a"/>
+  <rect x="72" y="112" width="382" height="18" fill="#12253a"/>
+  <text x="94" y="114" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8" letter-spacing="2">DESTINATION MAP</text>
+  <circle cx="420" cy="108" r="7" fill="#22d3ee" fill-opacity="0.25"/>
+  <circle cx="420" cy="108" r="3" fill="#22d3ee"/>
+
+  <!-- map landmass -->
+  <g>
+    <path d="M110 190 C150 160 190 168 220 190 C255 215 290 200 320 220 C355 244 350 280 320 300 C288 322 250 316 220 336 C190 356 150 350 130 320 C110 290 90 240 110 190 Z" fill="#123249" stroke="#22d3ee" stroke-opacity="0.35" stroke-width="1.5"/>
+    <path d="M330 140 C360 150 380 180 372 210 C362 245 340 250 330 230 C320 210 310 160 330 140 Z" fill="#14364c" stroke="#22d3ee" stroke-opacity="0.25"/>
+    <path d="M120 360 C150 340 190 350 210 372 C230 394 200 412 170 410 C140 408 105 380 120 360 Z" fill="#14364c" stroke="#a78bfa" stroke-opacity="0.3"/>
+  </g>
+  <g fill="none" stroke="#22d3ee" stroke-opacity="0.35" stroke-dasharray="5 7">
+    <path d="M170 290 C220 260 260 250 305 268"/>
+    <path d="M170 290 C190 240 240 210 300 205"/>
+  </g>
+
+  <!-- pins -->
+  <g>
+    <g transform="translate(170 290)">
+      <path d="M0 -30 C13 -30 22 -20 22 -8 C22 8 0 26 0 26 C0 26 -22 8 -22 -8 C-22 -20 -13 -30 0 -30 Z" fill="url(#sunset)"/>
+      <circle cx="0" cy="-8" r="8" fill="#06121e"/>
+      <circle cx="0" cy="-8" r="3.5" fill="#7dd3fc"/>
+    </g>
+    <g transform="translate(305 268)">
+      <path d="M0 -22 C10 -22 17 -15 17 -5 C17 8 0 22 0 22 C0 22 -17 8 -17 -5 C-17 -15 -10 -22 0 -22 Z" fill="#22d3ee" fill-opacity="0.75"/>
+      <circle cx="0" cy="-5" r="5.5" fill="#06121e"/>
+    </g>
+    <g transform="translate(305 205)">
+      <path d="M0 -22 C10 -22 17 -15 17 -5 C17 8 0 22 0 22 C0 22 -17 8 -17 -5 C-17 -15 -10 -22 0 -22 Z" fill="#a78bfa" fill-opacity="0.8"/>
+      <circle cx="0" cy="-5" r="5.5" fill="#06121e"/>
+    </g>
+  </g>
+
+  <!-- recommendation panel -->
+  <rect x="482" y="86" width="246" height="348" rx="20" fill="#0c1a2b" stroke="#284566" stroke-opacity="0.9"/>
+  <text x="504" y="120" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8" letter-spacing="2">RECOMMENDED</text>
+  <path d="M504 136 H706" stroke="#284566" stroke-width="1"/>
+
+  <g>
+    <rect x="504" y="152" width="202" height="64" rx="12" fill="#12253a" stroke="#22d3ee" stroke-opacity="0.25"/>
+    <rect x="516" y="164" width="40" height="40" rx="9" fill="url(#sunset)" fill-opacity="0.85"/>
+    <path d="M520 196 L532 180 L540 190 L548 176" fill="none" stroke="#04111a" stroke-width="2" stroke-linecap="round"/>
+    <text x="568" y="180" font-family="Segoe UI, sans-serif" font-size="12" fill="#e2e8f0">Lake Malawi</text>
+    <text x="568" y="198" font-family="Consolas, monospace" font-size="10" fill="#67e8f9">98% match</text>
+  </g>
+  <g>
+    <rect x="504" y="228" width="202" height="64" rx="12" fill="#12253a" stroke="#284566" stroke-opacity="0.6"/>
+    <rect x="516" y="240" width="40" height="40" rx="9" fill="#1d4d63"/>
+    <path d="M524 272 L538 250 L552 272" fill="none" stroke="#7dd3fc" stroke-width="2" stroke-linejoin="round"/>
+    <text x="568" y="256" font-family="Segoe UI, sans-serif" font-size="12" fill="#e2e8f0">Mount Mulanje</text>
+    <text x="568" y="274" font-family="Consolas, monospace" font-size="10" fill="#94a3b8">91% match</text>
+  </g>
+  <g>
+    <rect x="504" y="304" width="202" height="64" rx="12" fill="#12253a" stroke="#284566" stroke-opacity="0.6"/>
+    <rect x="516" y="316" width="40" height="40" rx="9" fill="#3a2a5c"/>
+    <circle cx="536" cy="336" r="10" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+    <path d="M530 336 H542 M536 330 V342" stroke="#c4b5fd" stroke-width="2"/>
+    <text x="568" y="332" font-family="Segoe UI, sans-serif" font-size="12" fill="#e2e8f0">Liwonde Park</text>
+    <text x="568" y="350" font-family="Consolas, monospace" font-size="10" fill="#94a3b8">87% match</text>
+  </g>
+
+  <!-- search bar -->
+  <rect x="504" y="384" width="202" height="30" rx="15" fill="#0e1c2f" stroke="#284566" stroke-opacity="0.8"/>
+  <circle cx="520" cy="399" r="5" fill="none" stroke="#64748b" stroke-width="1.6"/>
+  <path d="M524 403 L528 407" stroke="#64748b" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="536" y="403" font-family="Segoe UI, sans-serif" font-size="10" fill="#64748b">Find a destination...</text>
+
+  <!-- floating chips -->
+  <g>
+    <rect x="94" y="46" width="112" height="26" rx="13" fill="#0d2233" stroke="#22d3ee" stroke-opacity="0.35"/>
+    <circle cx="108" cy="59" r="3.5" fill="#22d3ee"/>
+    <text x="118" y="63" font-family="Consolas, monospace" font-size="10" fill="#7dd3fc">personalised</text>
+  </g>
+  <g>
+    <rect x="610" y="456" width="118" height="26" rx="13" fill="#1a1230" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <circle cx="624" cy="469" r="3.5" fill="#a78bfa"/>
+    <text x="634" y="473" font-family="Consolas, monospace" font-size="10" fill="#c4b5fd">data-driven</text>
+  </g>
+</svg>

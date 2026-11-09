@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Abstract dark technology background with cyan and violet glows">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060a13"/>
+      <stop offset="0.55" stop-color="#0a1120"/>
+      <stop offset="1" stop-color="#0b0918"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#22d3ee" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="0.6" stop-color="#a78bfa" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pinkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#e879f9" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#e879f9" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#8aa4c8" stroke-opacity="0.075" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#base)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <circle cx="1280" cy="150" r="460" fill="url(#cyanGlow)"/>
+  <circle cx="230" cy="780" r="430" fill="url(#violetGlow)"/>
+  <circle cx="900" cy="480" r="380" fill="url(#pinkGlow)"/>
+
+  <g fill="none" stroke="#22d3ee" stroke-opacity="0.14">
+    <polygon points="1180,120 1420,260 1360,520 1120,380"/>
+    <polygon points="1180,120 1120,380 940,300"/>
+    <polyline points="120,220 340,180 520,320 760,260 900,380"/>
+    <polyline points="160,700 380,620 560,700 780,600"/>
+  </g>
+  <g stroke="url(#beam)" stroke-width="1.5" stroke-opacity="0.6">
+    <line x1="0" y1="640" x2="1600" y2="300"/>
+    <line x1="0" y1="700" x2="1600" y2="360"/>
+  </g>
+  <g fill="#22d3ee" opacity="0.55">
+    <circle cx="1180" cy="120" r="4"/>
+    <circle cx="1420" cy="260" r="3"/>
+    <circle cx="1360" cy="520" r="5"/>
+    <circle cx="340" cy="180" r="3"/>
+    <circle cx="760" cy="260" r="4"/>
+    <circle cx="560" cy="700" r="3"/>
+  </g>
+  <g fill="#a78bfa" opacity="0.4">
+    <circle cx="300" cy="420" r="2.5"/>
+    <circle cx="520" cy="480" r="2"/>
+    <circle cx="980" cy="720" r="3"/>
+    <circle cx="1460" cy="640" r="2.5"/>
+  </g>
+</svg>

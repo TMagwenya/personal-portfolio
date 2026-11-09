@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software projects by Tanatswa Magwenya: a TCP/IP chat application, a tourism recommendation system and a wxPython desktop application.">
+  <meta name="author" content="Tanatswa Magwenya">
+  <title>Projects | Tanatswa Magwenya</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TM</span>
+        <span class="brand-text">
+          <span class="brand-name">Tanatswa <strong>Magwenya</strong></span>
+          <span class="brand-sub">Computer Science</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About Me</a></li>
+          <li><a class="nav-link is-active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav-link" href="animations.html">Animated Concepts</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm nav-cta" href="mailto:tanatswamagwenya@gmail.com">Hire me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" aria-labelledby="projects-title">
+      <div class="container">
+        <span class="eyebrow">Projects</span>
+        <h1 id="projects-title">Things I have designed,<br>coded and shipped.</h1>
+        <p>
+          Each project below began as a practical question and grew into a working
+          application. Every card links directly to the source code on GitHub, so you can
+          explore how it was built.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT LIST ================= -->
+    <section class="section" aria-label="Project portfolio">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+          <button class="filter-btn" type="button" data-filter="networking" aria-pressed="false">Networking</button>
+          <button class="filter-btn" type="button" data-filter="desktop" aria-pressed="false">Desktop</button>
+          <button class="filter-btn" type="button" data-filter="data" aria-pressed="false">Data &amp; AI</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+
+          <!-- Project 1: TCP/IP Chat -->
+          <article class="project-card reveal" id="project-chat" data-tags="python networking">
+            <div class="project-media">
+              <a href="https://github.com/TMagwenya/TCP-IP-Chat-Application" target="_blank" rel="noopener noreferrer" aria-label="Open the TCP/IP Chat Application repository on GitHub">
+                <img src="images/project-chat.svg" alt="Illustration of the TCP/IP chat application showing a chat window, message bubbles and connected network nodes" width="800" height="520">
+              </a>
+              <span class="project-number">01 / Networking</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">Python &middot; Sockets &middot; Tkinter</p>
+              <h2 class="project-title">TCP/IP Chat Application</h2>
+              <p class="project-desc">
+                A client&ndash;server chat application that lets multiple users on the same
+                local network exchange messages in real time. The server accepts
+                connections, broadcasts messages and manages users, while each client
+                provides a desktop interface with a username, chat window and saved history.
+              </p>
+
+              <div class="problem-box">
+                <span class="problem-label">Problem it solves</span>
+                <p>
+                  On a shared local network, users needed a simple, self-hosted way to
+                  communicate in real time without depending on an external messaging
+                  service or an internet connection.
+                </p>
+              </div>
+
+              <ul class="feature-list">
+                <li>Real-time messaging between multiple connected clients</li>
+                <li>Typing indicator, usernames and saved chat history</li>
+                <li>Server controls to start, stop and disconnect users</li>
+              </ul>
+
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">TCP/IP</span>
+                <span class="tag">Sockets</span>
+                <span class="tag">Tkinter</span>
+                <span class="tag is-violet">Client&ndash;server</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://github.com/TMagwenya/TCP-IP-Chat-Application" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                  </svg>
+                  View repository
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/TMagwenya" target="_blank" rel="noopener noreferrer">More on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Tourism recommendation -->
+          <article class="project-card reveal" id="project-tourism" data-tags="python data">
+            <div class="project-media">
+              <a href="https://github.com/TMagwenya/tourism-recommendation-system" target="_blank" rel="noopener noreferrer" aria-label="Open the Tourism Recommendation System repository on GitHub">
+                <img src="images/project-tourism.svg" alt="Illustration of a tourism recommendation dashboard with a destination map, location pins and ranked recommendation cards" width="800" height="520">
+              </a>
+              <span class="project-number">02 / Data</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">Python &middot; Data handling &middot; Recommendations</p>
+              <h2 class="project-title">Tourism Recommendation System</h2>
+              <p class="project-desc">
+                A Python application that recommends tourist destinations based on a
+                visitor's interests and preferences. Destination information is organised
+                into a structured dataset, and a recommendation process ranks the
+                destinations that best match what the user is looking for.
+              </p>
+
+              <div class="problem-box">
+                <span class="problem-label">Problem it solves</span>
+                <p>
+                  Travellers often face too many options and too little guidance. A generic
+                  list of attractions does not help someone decide where to go next; this
+                  system narrows the choices to destinations that fit their interests.
+                </p>
+              </div>
+
+              <ul class="feature-list">
+                <li>Structured destination data with attributes for matching</li>
+                <li>Preference-based scoring and ranked recommendations</li>
+                <li>A simple interface for exploring suggested destinations</li>
+              </ul>
+
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Data structures</span>
+                <span class="tag is-violet">Recommendation logic</span>
+                <span class="tag is-violet">Algorithms</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://github.com/TMagwenya/tourism-recommendation-system" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                  </svg>
+                  View repository
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/TMagwenya" target="_blank" rel="noopener noreferrer">More on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: wxPython desktop app -->
+          <article class="project-card reveal" id="project-wxpython" data-tags="python desktop">
+            <div class="project-media">
+              <a href="https://github.com/TMagwenya/wxpython" target="_blank" rel="noopener noreferrer" aria-label="Open the wxPython desktop application repository on GitHub">
+                <img src="images/project-wxpython.svg" alt="Illustration of a wxPython desktop application with a sidebar, statistics cards, a bar chart and a data entry form" width="800" height="520">
+              </a>
+              <span class="project-number">03 / Desktop</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker">Python &middot; wxPython &middot; GUI design</p>
+              <h2 class="project-title">wxPython Desktop Application</h2>
+              <p class="project-desc">
+                A desktop application built with wxPython that brings together window
+                layouts, widgets and event handling in a structured Python codebase. The
+                project explores how to design a practical, offline-first interface with
+                native desktop behaviour.
+              </p>
+
+              <div class="problem-box">
+                <span class="problem-label">Problem it solves</span>
+                <p>
+                  Not every task works well in a browser. Users need fast desktop tools
+                  that run locally, respond immediately and keep their data available
+                  without a constant internet connection.
+                </p>
+              </div>
+
+              <ul class="feature-list">
+                <li>Multi-panel window layout with a navigation sidebar</li>
+                <li>Form controls, buttons and event-driven interactions</li>
+                <li>Object-oriented code organisation for a Python GUI</li>
+              </ul>
+
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">wxPython</span>
+                <span class="tag">OOP</span>
+                <span class="tag is-violet">GUI design</span>
+              </div>
+
+              <div class="project-actions">
+                <a class="btn btn-primary btn-sm" href="https://github.com/TMagwenya/wxpython" target="_blank" rel="noopener noreferrer">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+                  </svg>
+                  View repository
+                </a>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/TMagwenya" target="_blank" rel="noopener noreferrer">More on GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT SUMMARY TABLE ================= -->
+    <section class="section-tight" aria-labelledby="summary-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">At a glance</span>
+          <h2 id="summary-title">Project summary</h2>
+          <p>A quick comparison of the projects, their focus and the technologies used.</p>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table class="data-table">
+            <caption>Portfolio projects</caption>
+            <thead>
+              <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Focus</th>
+                <th scope="col">Technologies</th>
+                <th scope="col">Repository</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TCP/IP Chat Application</td>
+                <td>Networking</td>
+                <td>Python, sockets, Tkinter, TCP/IP</td>
+                <td><a href="https://github.com/TMagwenya/TCP-IP-Chat-Application" target="_blank" rel="noopener noreferrer">Open repo ↗</a></td>
+              </tr>
+              <tr>
+                <td>Tourism Recommendation System</td>
+                <td>Data &amp; recommendations</td>
+                <td>Python, data structures, algorithms</td>
+                <td><a href="https://github.com/TMagwenya/tourism-recommendation-system" target="_blank" rel="noopener noreferrer">Open repo ↗</a></td>
+              </tr>
+              <tr>
+                <td>wxPython Desktop Application</td>
+                <td>Desktop software</td>
+                <td>Python, wxPython, object-oriented design</td>
+                <td><a href="https://github.com/TMagwenya/wxpython" target="_blank" rel="noopener noreferrer">Open repo ↗</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GITHUB CTA ================= -->
+    <section class="section-tight">
+      <div class="container">
+        <div class="cta-band reveal">
+          <span class="eyebrow" style="justify-content: center;">Open source</span>
+          <h2>There is more code on GitHub.</h2>
+          <p>
+            These three projects are only the beginning. Visit my GitHub profile to see
+            the rest of my repositories, experiments and work in progress.
+          </p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://github.com/TMagwenya" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.42 7.42 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
+              </svg>
+              github.com/TMagwenya
+            </a>
+            <a class="btn btn-ghost" href="mailto:tanatswamagwenya@gmail.com">Discuss a project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">TM</span>
+          <span class="brand-text">
+            <span class="brand-name">Tanatswa <strong>Magwenya</strong></span>
+            <span class="brand-sub">Computer Science</span>
+          </span>
+        </a>
+        <p>
+          Third-year Computer Science student at DMI St John the Baptist University,
+          Mangochi, Malawi. Building thoughtful software for real problems.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="animations.html">Animated Concepts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="mailto:tanatswamagwenya@gmail.com">tanatswamagwenya@gmail.com</a></li>
+          <li><a href="https://github.com/TMagwenya" target="_blank" rel="noopener noreferrer">github.com/TMagwenya ↗</a></li>
+          <li>Mangochi, Malawi</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Tanatswa Magwenya. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
