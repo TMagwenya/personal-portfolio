@@ -48,7 +48,7 @@ All four pages share the same navigation menu, footer and external stylesheet.
 - JavaScript (vanilla) — mobile navigation, typing effect, IntersectionObserver scroll reveals, animated skill bars, project filtering, back-to-top button and dynamic footer year.
 - Google Fonts — Outfit, Inter and JetBrains Mono.
 - SVG — original background and project illustrations.
-- GitHub Pages — hosting (see deployment steps below).
+- GitHub Pages — hosting.
 
 No frameworks, libraries or downloaded templates are used.
 
@@ -91,26 +91,22 @@ Animations respect `prefers-reduced-motion` and do not block reading or navigati
 ## Folder structure
 
 
-personal-portfolio/
-├── index.html
-├── about.html
-├── projects.html
-├── animations.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── images/
-│   ├── profile.jpg
-│   ├── favicon.svg
-│   ├── background.svg
-│   ├── project-chat.svg
-│   ├── project-tourism.svg
-│   └── project-wxpython.svg
-└── README.md
-
-
-File names are lowercase, meaningful and free of spaces.
+PersonalPortfolio/
+- index.html
+- about.html
+- projects.html
+- animations.html
+- css/
+  - style.css
+- js/
+  - script.js
+- images/
+  - profile.jpg
+  - background.svg
+  - project-chat.svg
+  - project-tourism.svg
+  - project-wxpython.svg
+- README.md
 
 
 
@@ -130,33 +126,6 @@ No installation or build step is required.
 
 A local server is recommended so that relative paths behave exactly as they will on
 GitHub Pages.
-
-
-
-## Publish to GitHub Pages
-
-1. Create a new public repository named `personal-portfolio` on GitHub.
-2. Upload the contents of this folder (not the folder itself) to the repository root.
-3. Make sure `index.html` is at the root of the repository.
-4. Open Settings → Pages.
-5. Under Build and deployment, choose Deploy from a branch.
-6. Select the `main` branch and the `/ (root)` folder, then save.
-7. Wait for the site to publish and open the generated URL:
-   `https://tmagwenya.github.io/personal-portfolio/`
-8. Test every navigation link, project link, image and animation on the published site.
-
-
-
-## Before submitting — checklist
-
-- [x] All three repository links are public and return **200**:
-      `TCP-IP-Chat-Application`, `tourism-recommendation-system` and `wxpython`.
-- [x] Education table includes Glen View 2 Secondary School, Zimbabwe.
-- [ ] Review the skills percentages on `animations.html` and adjust them to your own confidence.
-- [ ] Confirm the interests/hobbies on `about.html` reflect you accurately.
-- [x] README includes the final GitHub Pages URL and repository URL.
-- [ ] Take screenshots of Home, About, Projects and Animated Concepts for submission.
-- [ ] Test the site on a phone and a desktop browser.
 
 
 
