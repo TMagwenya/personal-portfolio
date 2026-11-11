@@ -2262,10 +2262,11 @@ hr {
   }
 
   .hero-portrait {
-    order: 2;
+    order: -1;
     justify-self: center;
     width: min(350px, 82%);
-    margin-top: 12px;
+    margin-top: 0;
+    margin-bottom: 4px;
   }
 
   .chip-1 {
